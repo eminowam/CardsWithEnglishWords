@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context=".presentation.SettingsFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:gravity="center"
-        android:shadowColor="@color/back"
-        android:text="@string/default_state"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
             android:layout_gravity="center"
+            android:layout_margin="15dp"
             android:gravity="center"
-            android:text="@string/restore_really"
+            android:text="@string/buy_subs"
             android:textColor="@color/white"
             android:textSize="23sp"
             android:textStyle="bold" />
@@ -49,7 +39,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/yellow"
-                android:text="@string/cancel"
+                android:text="@string/no"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -60,7 +50,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/yellow"
-                android:text="@string/restore"
+                android:text="@string/premium"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -68,5 +58,4 @@
 
     </LinearLayout>
 
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

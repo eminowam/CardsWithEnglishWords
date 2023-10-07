@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cardswithenglishwords.R
 
-class AddNewWordFragment : Fragment() {
+class ListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = AddNewWordFragment()
+        fun newInstance() = ListFragment()
     }
 
-    private lateinit var viewModel: AddNewWordViewModel
+    private lateinit var viewModel: ListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_add_new_word, container, false)
+        return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(AddNewWordViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(ListViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

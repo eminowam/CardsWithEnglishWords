@@ -7,12 +7,13 @@
         android:title="home" />
 
     <item
-        android:id="@+id/add_page"
-        android:icon="@drawable/add_page"
-        android:title="add_page" />
+        android:id="@+id/list_page"
+        android:icon="@drawable/list"
+        android:title="list" />
 
     <item
         android:id="@+id/settings"
         android:icon="@drawable/settings_page"
         android:title="settings_page" />
 </menu>
+
