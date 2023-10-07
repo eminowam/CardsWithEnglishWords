@@ -1,4 +1,4 @@
-package com.example.cardswithenglishwords.presentation
+package com.example.cardswithenglishwords.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 
