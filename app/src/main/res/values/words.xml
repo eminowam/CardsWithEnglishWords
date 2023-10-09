@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="english_words">
+        <item>
+            <word>apple</word>
+            <translation>яблоко</translation>
+        </item>
+        <item>
+            <word>cat</word>
+            <translation>кот</translation>
+        </item>
+        <item>
+            <word>house</word>
+            <translation>дом</translation>
+        </item>
+        <item>
+            <word>table</word>
+            <translation>стол</translation>
+        </item>
+        <item>
+            <word>sun</word>
+            <translation>солнце</translation>
+        </item>
+        <item>
+            <word>eyes</word>
+            <translation>глаза</translation>
+        </item>
+        <item>
+            <word>list</word>
+            <translation>список</translation>
+        </item>
+        <item>
+            <word>book</word>
+            <translation>книга</translation>
+        </item>
+        <item>
+            <word>love</word>
+            <translation>любовь</translation>
+        </item>
+        <item>
+            <word>song</word>
+            <translation>песнья</translation>
+        </item>
+        <item>
+            <word>soul</word>
+            <translation>душа</translation>
+        </item>
+    </string-array>
+</resources>
