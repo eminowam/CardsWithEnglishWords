@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cardswithenglishwords.databinding.FragmentHomeScreenBinding
 import com.example.cardswithenglishwords.presentation.viewmodel.HomeScreenViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeScreenFragment : Fragment() {
 
     private val binding by lazy {
         FragmentHomeScreenBinding.inflate(layoutInflater)
     }
-    private lateinit var viewModel: HomeScreenViewModel
+    private val viewModel: HomeScreenViewModel by viewModel<HomeScreenViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

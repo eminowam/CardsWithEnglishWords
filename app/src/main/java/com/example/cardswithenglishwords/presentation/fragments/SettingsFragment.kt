@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.cardswithenglishwords.databinding.FragmentSettingsBinding
+import com.example.cardswithenglishwords.presentation.viewmodel.HomeScreenViewModel
 import com.example.cardswithenglishwords.presentation.viewmodel.SettingsViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SettingsFragment : Fragment() {
 
@@ -14,7 +16,7 @@ class SettingsFragment : Fragment() {
         FragmentSettingsBinding.inflate(layoutInflater)
     }
 
-    private lateinit var viewModel: SettingsViewModel
+    private val viewModel: SettingsViewModel by viewModel<SettingsViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

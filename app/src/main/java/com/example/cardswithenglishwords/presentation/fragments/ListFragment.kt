@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.cardswithenglishwords.databinding.FragmentListBinding
+import com.example.cardswithenglishwords.presentation.viewmodel.HomeScreenViewModel
 import com.example.cardswithenglishwords.presentation.viewmodel.ListViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ListFragment : Fragment() {
 
@@ -14,12 +16,12 @@ class ListFragment : Fragment() {
         FragmentListBinding.inflate(layoutInflater)
     }
 
-    private lateinit var viewModel: ListViewModel
+    private val viewModel: ListViewModel by viewModel<ListViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View=binding.root
+    ): View = binding.root
 
 
 }
