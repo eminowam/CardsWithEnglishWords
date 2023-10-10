@@ -11,6 +11,7 @@ val domainModule = module {
         )
     }
     factory {
-        ListUseCase(repository = get())
+        ListUseCase(
+            repository = get())
     }
 }
