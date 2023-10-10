@@ -16,7 +16,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/movies_title"
+            android:id="@+id/word_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/back_card"

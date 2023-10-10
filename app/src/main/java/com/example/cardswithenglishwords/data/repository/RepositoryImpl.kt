@@ -14,7 +14,11 @@ class RepositoryImpl(
     override suspend fun getAllWords(): List<Word> =
         mapFromListOfWordStorageToListOfWord.map(dao.getAllWords())
 
-    override suspend fun getWordsById(word: Word) =
-        dao.getWordById(mapFromWordToWordStorage.map(word))
+    override suspend fun getWordsById(word: Word): WordStorage? {
+        TODO("Not yet implemented")
+    }
+
+//    override suspend fun getWordsById(word: Word) =
+//        dao.getWordById(mapFromWordToWordStorage.map(word))
 
 }
