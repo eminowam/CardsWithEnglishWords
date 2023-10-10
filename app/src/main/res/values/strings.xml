@@ -14,4 +14,10 @@
     <string name="no"> No,Thank you</string>
     <string name="buy_subs"> Buy a subscription for $10 per month</string>
     <string name="restore_really"> Do you really want to restore the number of attempts?</string>
+
+
+    <string name="save"> Save</string>
+    <string name="word_add"> Word</string>
+    <string name="translation"> Translation</string>
+
 </resources>

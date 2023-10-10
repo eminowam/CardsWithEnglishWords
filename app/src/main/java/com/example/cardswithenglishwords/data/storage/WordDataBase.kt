@@ -5,6 +5,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.cardswithenglishwords.data.models.WordStorage
+import com.example.cardswithenglishwords.presentation.fragments.AddWordFragment
+
+private const val DB_NAME = "word_item.db"
 
 @Database(entities = [WordStorage::class], version = 1)
 abstract class WordDataBase : RoomDatabase() {
@@ -16,13 +19,14 @@ abstract class WordDataBase : RoomDatabase() {
 
         fun getInstance(context: Context): WordDataBase {
             return INSTANCE ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
+
+                val db = Room.databaseBuilder(
                     context.applicationContext,
                     WordDataBase::class.java,
-                    "word_database"
+                    DB_NAME
                 ).build()
-                INSTANCE = instance
-                instance
+                INSTANCE = db
+                db
             }
         }
     }

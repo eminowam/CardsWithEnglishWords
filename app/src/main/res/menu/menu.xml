@@ -7,6 +7,11 @@
         android:title="home" />
 
     <item
+        android:id="@+id/add_word"
+        android:icon="@drawable/add_page"
+        android:title="add_word"/>
+
+    <item
         android:id="@+id/list_page"
         android:icon="@drawable/list"
         android:title="list" />
@@ -15,5 +20,8 @@
         android:id="@+id/settings"
         android:icon="@drawable/settings_page"
         android:title="settings_page" />
+
+
 </menu>
+
 
